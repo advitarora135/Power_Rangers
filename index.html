@@ -1,0 +1,91 @@
+<html>
+<head><title>TBD</title></head>
+<body>
+  <center>
+  <img src="https://i.kym-cdn.com/entries/icons/facebook/000/014/144/Power-Rangers-current-logo-power-rangers-and-sailor-moon-28974693-500-218.jpg">
+  <p><b>Press: R, G, Y, P, B</b></p>
+  <br>
+<style>
+  #red_r{
+    visibility: hidden;
+    height: 500px;
+  }
+  #green_r{
+    visibility: hidden;
+    height: 500px;
+  }
+  #yellow_r{
+    visibility: hidden;
+    height: 500px;
+  }
+  #pink_r{
+    visibility: hidden;
+    height: 500px;
+  }
+  #blue_r{
+    visibility: hidden;
+    height: 500px;
+  }
+  body{
+    background-color: black;
+  }
+  p{
+   color: rgb(255, 255, 255);
+  }
+</style>
+  <img id="red_r" src="rr1.png">
+  <img id="green_r"src="gr.png">
+  <img id="yellow_r"src="yr.png">
+  <img id="pink_r"src="pr.png">
+  <img id="blue_r"src="br.png">
+  
+  
+  <script>
+    addEventListener("keydown", my_keydown);
+
+function my_keydown(e)
+{
+	keyPressed = e.keyCode;
+	console.log(keyPressed);
+	
+		if((keyPressed == 82)){
+			showRedImage();
+    }
+    if((keyPressed == 71)){
+			showGreenImage();
+    }
+    if((keyPressed == 89)){
+			showYellowImage();
+    }
+    if((keyPressed == 80)){
+			showPinkImage();
+    }
+    if((keyPressed == 66)){
+			showBlueImage();
+    }
+
+}
+function showRedImage() {
+    var img = document.getElementById('red_r');
+    img.style.visibility = 'visible';
+}
+function showGreenImage() {
+    var img = document.getElementById('green_r');
+    img.style.visibility = 'visible';
+}
+function showYellowImage() {
+    var img = document.getElementById('yellow_r');
+    img.style.visibility = 'visible';
+}
+function showPinkImage() {
+    var img = document.getElementById('pink_r');
+    img.style.visibility = 'visible';
+}
+function showBlueImage() {
+    var img = document.getElementById('blue_r');
+    img.style.visibility = 'visible';
+}
+  </script>
+  </center>
+</body>
+</html>
